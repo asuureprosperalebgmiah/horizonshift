@@ -100,6 +100,8 @@ body {
   margin-top: auto;   /* pushes footer down */
   color: var(--muted); 
   font-size: 13px; 
+
+  margin-top: auto;
 }
 
 .sr-only {
@@ -111,6 +113,7 @@ body {
   .header { flex-direction: column; align-items: flex-start; }
 }
 
+<<<<<<< HEAD
 
 /* Premium redesign additions */
 body {
@@ -189,3 +192,8 @@ footer {
   color: #a0b8d2;
   font-size: 0.85rem;
 }
+=======
+/* HS fix: spacing */
+.hero { margin-bottom: 12px; }
+.cta { margin-bottom: 8px; }
+>>>>>>> 260023a9210bd5e718beaccf194d98370d0434b4

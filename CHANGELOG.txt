@@ -1,0 +1,6 @@
+HorizonShift Fix — 2025-08-10T18:13:44.951991Z
+- Header/nav injected if missing; CSS cache-busted (?v=fix1).
+- Layout stabilized (no footer overlap): container min-height + flex; footer pushes to bottom.
+- Primary nav styles + spacing added.
+- Ensured /start-here, /level-up-ai, /thanks, and 404 pages exist.
+- robots.txt and sitemap.xml added if missing.
