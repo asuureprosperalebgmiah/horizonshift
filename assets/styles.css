@@ -1,6 +1,63 @@
 
-/* --- Robust page layout: footer never overlaps, content stays centered --- */
+/* === 3‑bar layout: header / main / footer each with its own background === */
+:root{
+  --hdr-bg: #0b1220;                    /* header bar */
+  --main-bg: linear-gradient(180deg,#0e1630 0%, #0a1326 100%); /* main bar */
+  --ftr-bg: #0a0f1a;                    /* footer bar */
+  --bar-sep: rgba(255,255,255,.06);     /* subtle separators */
+  --fg: #eef3ff;
+  --muted: #a7b7d8;
+}
+
 html, body { height: 100%; }
+body{
+  margin: 0;
+  color: var(--fg);
+  background: #0a0f1a; /* base fallback behind bars */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* HEADER BAR */
+.site-header{
+  background: var(--hdr-bg);
+  position: sticky; top: 0; z-index: 50;
+  border-bottom: 1px solid var(--bar-sep);
+}
+
+/* MAIN BAR */
+.site-main{
+  background: var(--main-bg);
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-bottom: 1px solid var(--bar-sep);
+}
+
+/* FOOTER BAR */
+.site-footer{
+  background: var(--ftr-bg);
+  margin-top: auto;
+  border-top: 1px solid var(--bar-sep);
+}
+
+/* container */
+.container{ width: 100%; max-width: 1100px; margin: 0 auto; padding: 0 22px; }
+
+/* spacing */
+.hero{ padding: 48px 0 28px; }
+.panels{ padding: 12px 0 40px; }
+@media (max-width: 860px){
+  .hero{ padding-bottom: 36px; }
+  .panels{ padding-bottom: 44px; }
+}
+
+
+
+/* --- Robust page layout: footer never overlaps, content stays centered --- */
+html, body { height: auto; }
 
 body {
   display: flex;
