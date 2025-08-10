@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Essential Meta -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>HorizonShift — Coming Soon</title>
+  <meta name="description" content="HorizonShift helps everyday people and innovators explore new opportunities in a changing world — from first steps to AI-powered strategies." />
+
+  <!-- Open Graph / Social -->
+  <meta property="og:title" content="HorizonShift — Coming Soon" />
+  <meta property="og:description" content="Two paths: Start Here for grassroots guides, Level Up with AI for advanced strategies." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://horizonshift.netlify.app" />
+
+  <!-- Theme & Icon -->
+  <meta name="theme-color" content="#0b1220" />
+  <link rel="icon" href="/icons/favicon.svg" type="image/svg+xml" />
+
+  <!-- Styles -->
+  <link rel="preload" href="/assets/styles.css" as="style" />
+  <link rel="stylesheet" href="/assets/styles.css" />
+</head>
+<body>
+  <main class="container" role="main">
+    <!-- Site Header -->
+    <header class="header" aria-label="Site header">
+      <div class="brand">
+        <div class="brand__logo" aria-hidden="true">HS</div>
+        <div class="brand__text">
+          <strong class="brand__name">HorizonShift</strong>
+          <span class="brand__tag">Exploring possibilities beyond the AI horizon</span>
+        </div>
+      </div>
+      <span class="header__status" aria-live="polite">Launching soon</span>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero" aria-labelledby="hero-title">
+      <p class="hero__eyebrow" id="hero-eyebrow">Coming Soon</p>
+      <h1 class="hero__title" id="hero-title">
+        Thrive in a changing world — <br />from first steps to AI-powered leaps.
+      </h1>
+      <p class="hero__subtitle">
+        Two clear paths for your journey. Start with simple, practical moves or dive into advanced strategies to make AI work for you.
+      </p>
+      <nav class="cta" aria-label="Primary choices">
+        <a class="btn btn--primary" href="/start-here">Start Here</a>
+        <a class="btn btn--secondary" href="/level-up-ai">Level Up with AI</a>
+      </nav>
+
+      <!-- Netlify static form -->
+      <form class="notify" name="hs-notify" method="POST" data-netlify="true" action="/thanks">
+        <input type="hidden" name="form-name" value="hs-notify" />
+        <label class="sr-only" for="email">Email address</label>
+        <input id="email" name="email" type="email" class="input" placeholder="Enter your email to get launch updates" required />
+        <button class="btn btn--primary" type="submit">Notify Me</button>
+      </form>
+      <p class="fineprint">We’ll only email you about the launch and new resources. Unsubscribe anytime.</p>
+    </section>
+
+    <!-- Overview Panels -->
+    <section class="panels" aria-label="Overview">
+      <article class="card card--span-7">
+        <h2 class="card__title">Start Here — Grassroots Path</h2>
+        <p class="card__text">Beginner-friendly guides: earning online, skill roadmaps, and adapting to the new economy without the jargon.</p>
+      </article>
+      <article class="card card--span-5">
+        <h2 class="card__title">Level Up with AI</h2>
+        <p class="card__text">Toolkits, automations, and playbooks to use AI for content, products, and income — efficiently and ethically.</p>
+      </article>
+    </section>
+
+    <footer class="footer">
+      <small>© <span id="year"></span> HorizonShift. All rights reserved.</small>
+    </footer>
+  </main>
+
+  <!-- Scripts -->
+  <script src="/assets/main.js" defer></script>
+</body>
+</html>
