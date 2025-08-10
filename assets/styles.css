@@ -100,6 +100,8 @@ body {
   margin-top: auto;   /* pushes footer down */
   color: var(--muted); 
   font-size: 13px; 
+
+  margin-top: auto;
 }
 
 .sr-only {
@@ -110,3 +112,7 @@ body {
   .card--span-7, .card--span-5 { grid-column: auto; }
   .header { flex-direction: column; align-items: flex-start; }
 }
+
+/* HS fix: spacing */
+.hero { margin-bottom: 12px; }
+.cta { margin-bottom: 8px; }
